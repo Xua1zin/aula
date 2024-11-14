@@ -1,0 +1,36 @@
+<table class="table">
+    <thead>
+        <tr>
+        <th>
+            #
+        </th>
+        <th>
+            Nome
+        </th>
+        <th>
+            E-mail
+        </th>
+        <th>
+            Usuario
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+        @for(linha of usuarios; track $index){
+        <tr>
+            <td>
+                {{linha.id}}
+            </td>
+            <td>
+                {{ linha.name }}
+            </td>
+            <td>
+                {{ linha.email }}
+            </td>
+            <td>
+                {{ linha.username }}
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

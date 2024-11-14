@@ -1,0 +1,15 @@
+<div class="bg-dark d-flex align-items-center justify-content-center vh-100">
+    <div class="login-container card p-4 shadow-lg">
+      <h2 class="text-center mb-4">Login</h2>
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Usuário" required [(ngModel)]="usuario" name="usuario">
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" placeholder="Senha" required [(ngModel)]="senha" name="senha">
+        </div>
+        <button type="button" class="btn btn-dark w-100" (click)="logar()">Entrar</button>
+      </form>
+    </div>
+  </div>
+  
